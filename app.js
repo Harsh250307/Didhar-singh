@@ -9,7 +9,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-mongoose.connect('your_mongodb_atlas_connection_string', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://harshcad07:Abc1234@harsh07.y5e0e.mongodb.net/?retryWrites=true&w=majority&appName=Harsh07', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log(err));
 
